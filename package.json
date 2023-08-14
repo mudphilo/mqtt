@@ -1,0 +1,17 @@
+{
+  "name": "feeds",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "production": "nodemon app.js"
+  },
+  "dependencies": {
+    "mqtt": "5.0.2",
+    "nodemon": "^1.18.3",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
+  },
+  "author": "",
+  "license": "ISC"
+}
