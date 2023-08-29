@@ -7,7 +7,10 @@ const { v4: uuidv4 } = require('uuid')
  * EMQX's default port for ws connection is 8083 and for wss connection is 8084.
  * Note that you need to add a path after the connection address, such as /mqtt.
  */
-var url = ''
+var url = 'mqtt://159.223.125.165:1883/mqtt'
+
+//url = 'wss://feeds.stakersbet.com/mqtt'
+
 //url = 'ws://broker.emqx.io:8083/mqtt'
 /***
  * Node.js
@@ -46,6 +49,7 @@ client.on('connect', function () {
             console.log('subscribed to '+topic)
         }
     })
+
 })
 
 client.on('reconnect', function () {
@@ -76,7 +80,7 @@ client.on('message', function (topic, message) {
 
     // message is Buffer
     var object = JSON.parse(message.toString())
-    console.log(topic+" | "+JSON.stringify(object, undefined, 2));
+    console.log(topic+" | "+message);
 
     //client.end()
 

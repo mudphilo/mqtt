@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "production": "nodemon app.js"
+    "feeds": "nodemon app.js",
+    "bets": "nodemon bets.js"
   },
   "dependencies": {
     "mqtt": "5.0.2",
