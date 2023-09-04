@@ -99,6 +99,7 @@ var bet = {
     bet_id: "1",
     source: 1,
     profile_id: 1,
+    limit_id: 5071,
     ip_address: "3.45.12.34",
     stake: 10.56,
     reply_prefix: REPLY_PREFIX,
